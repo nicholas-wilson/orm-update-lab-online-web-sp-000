@@ -9,9 +9,9 @@ class Student
     @grade = grade
     @id = id
   end
-  
+
   def save
-    
+
   end
 
 end
