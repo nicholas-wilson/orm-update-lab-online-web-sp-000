@@ -28,6 +28,10 @@ class Student
     student.save
   end
 
+  def self.new_from_db(row)
+    self.new(row[1], row[2], row[0])      
+  end
+
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS students (
